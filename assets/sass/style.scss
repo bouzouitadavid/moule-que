@@ -1,0 +1,179 @@
+/* css bouzouita david - moule-que siteweb */
+
+/* colors */
+$color-brun: #67412A;
+$color-sandy: #FAD572;
+$color-goldenrod: #E39B2A;
+$color-blackolive: #261E1A;
+$color-beige: #E9E4D8;
+$color-darkolive: #67412A;
+
+/* fonts */
+$font-indie: 'Indie Flower', cursive;
+$font-encode: 'Encode Sans Condensed', sans-serif;
+$font-rochester: 'Rochester', cursive;
+
+
+/* */ 
+header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    min-height: 100vh;
+    display: block;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header:before {
+    content: url(../img/plat-4.jpg);
+    position: absolute;
+    opacity: 1;
+    transform: scale(0.4);
+}
+
+.text-logo {
+    color: #fff;
+    font-size: 4.5em;
+}
+#curve {
+    display: none;
+}
+
+.jumbotron {
+    margin: 0;
+    font-family: $font-rochester;
+    background-color: inherit;
+    color: black;
+    .text-principal {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .text-principal h1,p {
+        background: rgba(250, 213, 114, 0.4);
+        padding: 5px;
+        border-radius: 5px;
+        opacity: 3;
+    }
+
+} 
+.jumbotron img {
+    transform: scale(1.2);
+    background: transparent;
+
+} 
+
+html {
+    background: white;
+    font-family: $font-rochester;
+}
+body {
+}
+
+.wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+    width: 100%;
+
+}
+.nav-principal {
+    margin: 100vh auto 0 auto;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background: $color-beige;
+    height: 60px;
+    align-items: center;
+    z-index: 2;
+}
+
+.nav-link {
+    font-family: $font-rochester;
+    font-size: 1.4em;
+    color: $color-blackolive;
+}
+
+.active {
+    font-family: $font-rochester;
+    font-size: 1.4em;
+    color: $color-goldenrod;
+    border-bottom: 8px solid $color-goldenrod;
+}
+
+.nav-link:hover {
+    color: $color-darkolive;
+    border-bottom: 8px solid $color-darkolive;
+
+}
+
+main {
+    box-shadow: 0px 5px 12px -1px rgba(0, 0, 0, 0.7);
+    background: white;
+    position: relative;
+    width: 85%;
+    border-radius: 0 0 10px 10px;
+    padding: 30px;
+    z-index: 1;
+    display: block;
+    margin: 0 auto 150px auto;
+    .this-week {
+        padding-top: 50px;
+    }
+
+    section, article {
+        padding: 30px;
+    }
+
+    figure {
+        height: 400px;
+        overflow: hidden;
+        img {
+            width: 100%;
+        }
+    }
+    
+}
+
+footer {
+    position: relative;
+    background: #261E1A;
+    z-index: 1;
+    color: white;
+    height: 60px;
+}
+
+
+.affix {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+/* fixed to top styles */
+.affix.navbar {
+  background-color: #333;
+}
+.affix.navbar .nav-item>a, 
+.affix.navbar .navbar-brand {
+    color: #fff;
+}
+
+form {
+    padding: 30px;
+}
+
+.main-page {
+    margin: 50px auto 150px auto;
+}
+
+.nav-page .nav-principal {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    margin: 0;
+}

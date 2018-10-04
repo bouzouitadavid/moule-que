@@ -1,0 +1,186 @@
+/* css bouzouita david - moule-que siteweb */
+/* colors */
+/* fonts */
+/* */
+/* line 18, ../sass/style.scss */
+header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  min-height: 100vh;
+  display: block;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 30, ../sass/style.scss */
+header:before {
+  content: url(../img/plat-4.jpg);
+  position: absolute;
+  opacity: 1;
+  transform: scale(0.4);
+}
+
+/* line 37, ../sass/style.scss */
+.text-logo {
+  color: #fff;
+  font-size: 4.5em;
+}
+
+/* line 41, ../sass/style.scss */
+#curve {
+  display: none;
+}
+
+/* line 45, ../sass/style.scss */
+.jumbotron {
+  margin: 0;
+  font-family: "Rochester", cursive;
+  background-color: inherit;
+  color: black;
+}
+/* line 50, ../sass/style.scss */
+.jumbotron .text-principal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* line 55, ../sass/style.scss */
+.jumbotron .text-principal h1, .jumbotron p {
+  background: rgba(250, 213, 114, 0.4);
+  padding: 5px;
+  border-radius: 5px;
+  opacity: 3;
+}
+
+/* line 63, ../sass/style.scss */
+.jumbotron img {
+  transform: scale(1.2);
+  background: transparent;
+}
+
+/* line 69, ../sass/style.scss */
+html {
+  background: white;
+  font-family: "Rochester", cursive;
+}
+
+/* line 76, ../sass/style.scss */
+.wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* line 82, ../sass/style.scss */
+.nav-principal {
+  margin: 100vh auto 0 auto;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background: #E9E4D8;
+  height: 60px;
+  align-items: center;
+  z-index: 2;
+}
+
+/* line 93, ../sass/style.scss */
+.nav-link {
+  font-family: "Rochester", cursive;
+  font-size: 1.4em;
+  color: #261E1A;
+}
+
+/* line 99, ../sass/style.scss */
+.active {
+  font-family: "Rochester", cursive;
+  font-size: 1.4em;
+  color: #E39B2A;
+  border-bottom: 8px solid #E39B2A;
+}
+
+/* line 106, ../sass/style.scss */
+.nav-link:hover {
+  color: #67412A;
+  border-bottom: 8px solid #67412A;
+}
+
+/* line 112, ../sass/style.scss */
+main {
+  box-shadow: 0px 5px 12px -1px rgba(0, 0, 0, 0.7);
+  background: white;
+  position: relative;
+  width: 85%;
+  border-radius: 0 0 10px 10px;
+  padding: 30px;
+  z-index: 1;
+  display: block;
+  margin: 0 auto 150px auto;
+}
+/* line 122, ../sass/style.scss */
+main .this-week {
+  padding-top: 50px;
+}
+/* line 126, ../sass/style.scss */
+main section, main article {
+  padding: 30px;
+}
+/* line 130, ../sass/style.scss */
+main figure {
+  height: 400px;
+  overflow: hidden;
+}
+/* line 133, ../sass/style.scss */
+main figure img {
+  width: 100%;
+}
+
+/* line 140, ../sass/style.scss */
+footer {
+  position: relative;
+  background: #261E1A;
+  z-index: 1;
+  color: white;
+  height: 60px;
+}
+
+/* line 149, ../sass/style.scss */
+.affix {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+/* fixed to top styles */
+/* line 158, ../sass/style.scss */
+.affix.navbar {
+  background-color: #333;
+}
+
+/* line 161, ../sass/style.scss */
+.affix.navbar .nav-item > a,
+.affix.navbar .navbar-brand {
+  color: #fff;
+}
+
+/* line 166, ../sass/style.scss */
+form {
+  padding: 30px;
+}
+
+/* line 170, ../sass/style.scss */
+.main-page {
+  margin: 50px auto 150px auto;
+}
+
+/* line 174, ../sass/style.scss */
+.nav-page .nav-principal {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  margin: 0;
+}
