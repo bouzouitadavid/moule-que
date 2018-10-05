@@ -64,6 +64,16 @@ html {
   width: 100%;
 }
 
+.title-site {
+  position: absolute;
+  top: 9px;
+  left: 50px;
+  color: #67412A;
+  font-family: "Rochester", cursive;
+  text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.5);
+  display: none;
+}
+
 .nav-principal {
   margin: 100vh auto 0 auto;
   position: -webkit-sticky;
@@ -78,19 +88,20 @@ html {
 .nav-link {
   font-family: "Rochester", cursive;
   font-size: 1.4em;
+  font-weight: 500;
   color: #261E1A;
+  transition: all 0.3s;
 }
 
-.active {
+.nav-principal .active {
   font-family: "Rochester", cursive;
   font-size: 1.4em;
   color: #E39B2A;
-  border-bottom: 8px solid #E39B2A;
 }
 
 .nav-link:hover {
   color: #67412A;
-  border-bottom: 8px solid #67412A;
+  transform: rotate(10deg);
 }
 
 main {
@@ -105,17 +116,18 @@ main {
   margin: 0 auto 150px auto;
 }
 main .this-week {
-  padding-top: 50px;
-}
-main section, main article {
-  padding: 30px;
+  padding: 50px 30px 30px 30px;
 }
 main figure {
-  height: 400px;
+  height: 300px;
   overflow: hidden;
 }
 main figure img {
   width: 100%;
+}
+
+.articles section article {
+  padding: 30px;
 }
 
 footer {
@@ -160,9 +172,20 @@ form {
 }
 
 .resto-status {
-  font: bold;
+  font-weight: 700;
+  background: #67412A;
+  padding: 2px 5px;
+  color: white;
 }
 
 .localisation {
   height: 400px;
+}
+
+.caption {
+  visibility: hidden;
+}
+
+.thumbnail a {
+  cursor: default;
 }

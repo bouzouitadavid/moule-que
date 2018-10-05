@@ -70,8 +70,6 @@ html {
     background: white;
     font-family: $font-rochester;
 }
-body {
-}
 
 .wrapper {
     max-width: 1280px;
@@ -79,6 +77,17 @@ body {
     width: 100%;
 
 }
+
+.title-site {
+    position: absolute;
+    top: 9px;
+    left: 50px;
+    color: $color-darkolive;
+    font-family: "Rochester", cursive;
+    text-shadow: 2px 2px 3px rgba(255,255,255,0.5);
+    display: none;
+}
+
 .nav-principal {
     margin: 100vh auto 0 auto;
     position: -webkit-sticky;
@@ -93,19 +102,20 @@ body {
 .nav-link {
     font-family: $font-rochester;
     font-size: 1.4em;
+    font-weight: 500;
     color: $color-blackolive;
+    transition: all 0.3s;
 }
 
-.active {
+.nav-principal .active {
     font-family: $font-rochester;
     font-size: 1.4em;
     color: $color-goldenrod;
-    border-bottom: 8px solid $color-goldenrod;
 }
 
 .nav-link:hover {
     color: $color-darkolive;
-    border-bottom: 8px solid $color-darkolive;
+    transform: rotate(10deg);
 
 }
 
@@ -120,21 +130,21 @@ main {
     display: block;
     margin: 0 auto 150px auto;
     .this-week {
-        padding-top: 50px;
-    }
-
-    section, article {
-        padding: 30px;
-    }
-
+        padding: 50px 30px 30px 30px; 
+    }  
+    
     figure {
-        height: 400px;
+        height: 300px;
         overflow: hidden;
         img {
             width: 100%;
         }
     }
     
+}
+
+.articles section article {
+    padding: 30px;
 }
 
 footer {
@@ -179,9 +189,20 @@ form {
 }
 
 .resto-status {
-    font: bold;
+    font-weight: 700;
+    background: #67412A;
+    padding: 2px 5px;
+    color: white;
 }
 
 .localisation {
     height: 400px;
 }
+
+.caption {
+    visibility: hidden;
+}
+.thumbnail a {
+    cursor: default;
+}
+
